@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@500&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 242, 242);
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: rgb(167, 232, 232);
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgb(50, 47, 47);
+    position: relative;
+
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #e58787;
+}
+.image{
+    position:relative ;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(231, 172, 61);
+    padding: 3px;
+    margin-bottom: 15px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 3px solid rgb(247, 247, 247);
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+
+}
+ .text-data .name{
+    font-size: 22px;
+    font-weight: 900;
+
+ }
+ .text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+
+ }
+ .profile-card .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+ }
+ .media-button .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e43636;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: black;
+    text-decoration:solid;
+
+ }
+ .profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+ }
+ .buttons .button {
+    color:none;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px ;
+    background-color: rgb(228, 63, 209);
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+ .buttons .button:hover{
+    background-color: rgb(137, 137, 212);
+
+ }
+
+ .profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #2c2929;
+    padding: 0 20px;
+    border-right: 2px solid rgb(150, 128, 128);
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
